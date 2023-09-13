@@ -1,7 +1,17 @@
 # CardioBERTpt
-CardioBERTpt - Portuguese Transformer-based Models for Clinical Language Representation in Cardiology ([paper](https://ieeexplore.ieee.org/document/10178779))]
+CardioBERTpt - Portuguese Transformer-based Models for Clinical Language Representation in Cardiology ([paper](https://ieeexplore.ieee.org/document/10178779))
+
+Abstract—Contextual word embeddings and the Transformers architecture have reached state-of-the-art results in many natural language processing (NLP) tasks and improved the adaptation of models for multiple domains. Despite the improvement in the reuse and construction of models, few resources are still developed for the Portuguese language, especially in the health domain.
+
+Furthermore, the clinical models available for the language are not representative enough for all medical specialties. This work explores deep contextual embedding models for the Portuguese language to support clinical NLP tasks. We transferred learned information from electronic health records of a Brazilian tertiary hospital specialized in cardiology diseases and pre-trained multiple clinical BERT-based models. We evaluated the performance of these models in named entity recognition experiments, fine-tuning them in two annotated corpora containing clinical narratives. Our pre-trained models outperformed previous multilingual and Portuguese BERT-based models for cardiology and multi-specialty environments, reaching the state-of-the-art for analyzed corpora, with 5.5% F1 score improvement in TempClinBr (all entities) and 1.7% in SemClinBr (Disorder entity) corpora. Hence, we demonstrate that data representativeness and a high volume of training data can improve the results for clinical tasks, aligned with results for other languages.
 
 <img src='img/exemplo_entidades.jpeg' title="Entities example">
+
+## Prerequisite
+
+Please download the amazing [Huggingface implementation of BERT](https://github.com/huggingface/pytorch-pretrained-BERT).
+
+For more information, you can refer to these [examples](https://github.com/huggingface/pytorch-pretrained-BERT/tree/master/examples).
 
 ## How to use the model
 
@@ -11,12 +21,6 @@ from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("pucpr-br/cardiobertpt")
 model = AutoModel.from_pretrained("pucpr-br/cardiobertpt")
 ```
-
-## Prerequisite
------
-Please download the amazing [Huggingface implementation of BERT](https://github.com/huggingface/pytorch-pretrained-BERT).
-
-For more information, you can refer to these [examples](https://github.com/huggingface/pytorch-pretrained-BERT/tree/master/examples).
 
 ## Acknowledgements
 
