@@ -4,9 +4,15 @@ Contextual word embeddings and the Transformers architecture have reached state-
 
 Furthermore, the clinical models available for the language are not representative enough for all medical specialties. This work explores deep contextual embedding models for the Portuguese language to support clinical NLP tasks. We transferred learned information from electronic health records of a Brazilian tertiary hospital specialized in cardiology diseases and pre-trained multiple clinical BERT-based models. We evaluated the performance of these models in named entity recognition experiments, fine-tuning them in two annotated corpora containing clinical narratives. Our pre-trained models outperformed previous multilingual and Portuguese BERT-based models for cardiology and multi-specialty environments, reaching the state-of-the-art for analyzed corpora, with 5.5% F1 score improvement in TempClinBr (all entities) and 1.7% in SemClinBr (Disorder entity) corpora. Hence, we demonstrate that data representativeness and a high volume of training data can improve the results for clinical tasks, aligned with results for other languages.
 
-Paper:[https://ieeexplore.ieee.org/document/10178779](https://ieeexplore.ieee.org/document/10178779)
+Paper: [https://ieeexplore.ieee.org/document/10178779](https://ieeexplore.ieee.org/document/10178779)
 
-<img src='img/exemplo_entidades.jpeg' title="Entities example">
+Training overview:
+
+<img src='img/cardiobertpt-training.png' title="Training overview">
+
+Example:
+
+<img src='img/exemplo_entidades.jpeg' title="Example">
 
 ## Prerequisite
 
