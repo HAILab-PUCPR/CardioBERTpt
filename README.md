@@ -1,8 +1,22 @@
 # CardioBERTpt
-CardioBERTpt - Portuguese Transformer-based Models for Clinical Language Representation in Cardiology ([paper(https://ieeexplore.ieee.org/document/10178779))]
+CardioBERTpt - Portuguese Transformer-based Models for Clinical Language Representation in Cardiology ([paper](https://ieeexplore.ieee.org/document/10178779))]
 
 <img src='img/exemplo_entidades.jpeg' title="Entities example">
 
+## How to use the model
+
+Load the model via the transformers library:
+```
+from transformers import AutoTokenizer, AutoModel
+tokenizer = AutoTokenizer.from_pretrained("pucpr-br/cardiobertpt")
+model = AutoModel.from_pretrained("pucpr-br/cardiobertpt")
+```
+
+## Prerequisite
+-----
+Please download the amazing [Huggingface implementation of BERT](https://github.com/huggingface/pytorch-pretrained-BERT).
+
+For more information, you can refer to these [examples](https://github.com/huggingface/pytorch-pretrained-BERT/tree/master/examples).
 
 ## Acknowledgements
 
