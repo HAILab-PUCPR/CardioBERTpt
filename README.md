@@ -6,7 +6,7 @@ Furthermore, the clinical models available for the language are not representati
 
 Paper: [https://ieeexplore.ieee.org/document/10178779](https://ieeexplore.ieee.org/document/10178779)
 
-Repository: [https://huggingface.co/pucpr-br/cardiobertpt](https://huggingface.co/pucpr-br/cardiobertpt)
+HuggingFace Repository: [https://huggingface.co/pucpr-br/cardiobertpt](https://huggingface.co/pucpr-br/cardiobertpt)
 
 Training overview:
 
